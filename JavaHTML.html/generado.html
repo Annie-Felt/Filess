@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Demostración</title>
+    <style>
+        :root {
+            --color1: #4a4241;
+            --color2: #706766;
+            --color3: #968d8c;
+            --color4: #bcb2b1;
+            --color5: #e2d8d7;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--color5);
+            color: var(--color1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+            padding: 20px;
+            background-color: var(--color4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .image-container {
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border: 5px solid var(--color3);
+            border-radius: 50%;
+        }
+
+        .image-container p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: var(--color2);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .image-container p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x600" alt="Imagen 1">
+            <p>Texto para la imagen 1</p>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x600" alt="Imagen 2">
+            <p>Texto para la imagen 2</p>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x600" alt="Imagen 3">
+            <p>Texto para la imagen 3</p>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x600" alt="Imagen 4">
+            <p>Texto para la imagen 4</p>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x600" alt="Imagen 5">
+            <p>Texto para la imagen 5</p>
+        </div>
+    </div>
+</body>
+</html>
